@@ -1,0 +1,44 @@
+{
+    "name": ":devtransition/:package_name",
+    "type": "library",
+    "description": ":package_description",
+    "keywords": [
+        "DevTransition",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/devtransition/:package_name",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "5.1.*",
+        "scrutinizer/ocular": "1.3.*",
+        "squizlabs/php_codesniffer": "2.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "devtransition\\:package_name\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "devtransition\\:package_name\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
