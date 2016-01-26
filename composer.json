@@ -6,8 +6,11 @@
         "DevTransition",
         ":package_name"
     ],
-    "homepage": "https://github.com/devtransition/:package_name",
+    "homepage": "https://github.com/devTransition/:package_name",
     "license": "Apache-2.0",
+    "support": {
+        "issues": "https://github.com/devTransition/:package_name/issues"
+    },
     "authors": [
         {
             "name": ":author_name",
